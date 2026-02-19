@@ -5,7 +5,7 @@ export default function HomeScreen() {
   const ws = useRef<WebSocket | null>(null);
 
   useEffect(() => {
-    ws.current = new WebSocket('ws://YOUR_IP:8000/ws/audio');
+    ws.current = new WebSocket('ws://10.223.34.162:8000/ws/audio');
 
     ws.current.onopen = () => {
       console.log('Connected to server');
